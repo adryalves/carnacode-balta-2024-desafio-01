@@ -1,12 +1,85 @@
-.flex {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+.Container{
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1{
+   font-size: 41px; 
+}
+
+.section-inputs{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0px;  
 }
 
-.flex-row {
-    flex-direction: row;
+  input[type="text"]{
+    margin: 10px;
+    width: 343px;
+    height: 50px;
+    border: 5px solid #E8E8E8  ;
+    background-color: #E8E8E8;
+    border-radius:  12px;
+    text-indent: 20px; 
+}
+  input:focus {
+    outline: none;
+  }
+
+  label{
+    text-align: left;
+    width: 343px;
+    height: 17px;
+    font-size: 17px;
+   
+  }
+
+  #AgeTerm{
+    margin-top: 30px;
+    
+  }
+.section{
+    margin: 0 auto;
+    width: 60%;
 }
 
-.input-text {
-    background-color: #F6F6F6;
-    border: 2px solid #BDBDBD;
+.section-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.section-buttons input[type="button"]{
+    margin: 10px;
+    text-align: center;
+    width: 343px;
+    height: 50px;
+    border-radius:  20px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.section-buttons input[type="button"]:hover{
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#CalculationButton{
+    border: none;
+    background-color: #45FEFE;
+    margin-top: 17px;
+}
+#UnderstandButton{
+    background-color: #FFFFFF;
+    border: 4px solid #45FEFE;
 }
